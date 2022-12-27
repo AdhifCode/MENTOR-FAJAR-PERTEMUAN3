@@ -1,0 +1,441 @@
+:root {
+  --purple-color: #7492fd;
+  --blue-color: #21d9f5;
+  --orange-color: #ff9900;
+  --green-color: #3ff521;
+  --white-color: #fff;
+
+  /* Linear Color */
+  --darkblue-color: #3300ff;
+  --lightblue-color: #00fff0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Buttons */
+
+.btn {
+  padding: 16px 32px;
+  border-radius: 129px;
+  color: #7492fd;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.btn.satu {
+  position: absolute;
+  z-index: 2;
+  padding: 26px 80px;
+  font-weight: 600;
+  text-align: center;
+  column-count: auto;
+  background: var(--white-color);
+  filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.11))
+    drop-shadow(0px 50.625px 34.875px rgba(0, 0, 0, 0.07425))
+    drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.055))
+    drop-shadow(0px 4.375px 4.625px rgba(0, 0, 0, 0.03575));
+}
+
+.button {
+  padding: 6px 12px;
+  font-family: "Poppins";
+  font-weight: 500;
+  border-radius: 0px;
+  border-color: var(--purple-color);
+  border-style: solid;
+  border-width: 5px;
+  color: var(--purple-color);
+  background: transparent;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  margin-top: 57px;
+}
+
+.btn.tiga {
+  background: var(--white-color);
+  color: var(--purple-color);
+  align-items: center;
+}
+
+/* Header */
+
+header {
+  background: linear-gradient(241.56deg, #00fff0 0%, #7592fd 102.48%);
+  height: 100vh;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+
+  justify-content: space-between;
+  position: fixed;
+  width: 1084px;
+  margin: 0% auto auto 12%;
+  padding-top: 36px;
+  z-index: 100;
+  transition: all 500ms ease;
+}
+
+nav.scrolled {
+  background: #7492fd;
+  filter: drop-shadow(0px 14px 61.9125px rgba(0, 0, 0, 0.075))
+    drop-shadow(0px 3.0625px 22.0266px rgba(0, 0, 0, 0.04875));
+  border-radius: 0 0 48px 48px;
+  margin: 0% auto 50% 12%;
+  padding-top: 0px;
+  transition: all 500ms ease;
+}
+
+nav .wm {
+  font-family: "The Nautigal";
+  font-weight: 400;
+  font-size: 48px;
+  font-style: normal;
+  line-height: 58px;
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  color: #ffffff;
+}
+
+nav .logo {
+  margin-left: 309px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 65px;
+  list-style: none;
+  margin-right: 40px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav ul li a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.garis-home {
+  border: 5px solid #ffffff;
+  border-bottom: none;
+  width: 100%;
+  border-left: none;
+  border-right: none;
+}
+
+/* Home Section */
+.text-section {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+
+.text-section .grup-home {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-section .kiri h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.text-section .kiri h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.text-section .kiri p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 72px;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.text-section .kiri {
+  width: 452px;
+  margin-bottom: 10%;
+  margin-left: 150px;
+}
+
+.text-section .kiri .hiasan {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 23%;
+  top: 600px;
+  transform: rotate(7deg);
+  z-index: 1;
+  margin: 0;
+}
+
+.text-section .kanan {
+  align-self: flex-end;
+  max-width: 100%;
+  height: auto;
+}
+
+.text-section .kanan img {
+  position: absolute;
+  left: 35%;
+  top: 70px;
+  max-width: 100%;
+  height: auto;
+  z-index: 5;
+}
+
+/* About */
+.about-section {
+  background: var(--white-color);
+  height: 100vh;
+  width: auto;
+  padding: 16px 92px;
+  padding-top: 30px;
+  padding-right: 60px;
+}
+
+.page-about {
+  padding-top: 150px;
+}
+
+.judul .judul-garis {
+  display: flex;
+  align-items: center;
+  margin-left: 570px;
+}
+
+.about-section .judul {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1px;
+  padding-top: 0px;
+}
+
+.judul-garis .garis-1 {
+  border: 6px solid #01fff0;
+  border-bottom: none;
+  width: 13%;
+  border-left: none;
+  border-right: none;
+}
+
+.judul-garis .garis-2 {
+  border: 3px solid #01fff0;
+  border-bottom: none;
+  width: 4%;
+  border-left: none;
+  border-right: none;
+  margin-left: 20px;
+}
+
+.about-section .grup-isian {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-section .grup-isian .isian-kiri {
+  align-self: flex-start;
+  max-width: 100%;
+  height: auto;
+}
+
+.about-section .isian-kiri img {
+  width: 90%;
+}
+
+.about-section .grup-isian .isian-kanan {
+  width: 645px;
+}
+
+.about-section .isian-kanan h1 {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: Poppins, sans-serif;
+  color: var(--purple-color);
+}
+
+.about-section .isian-kanan p {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Poppins, sans-serif;
+}
+
+.about-section .isian-kanan .kotaks {
+  display: flex;
+  margin-top: 53px;
+  border-radius: 13px;
+  width: 483px;
+  height: 203px;
+  color: #fff;
+  background: var(--purple-color);
+}
+
+.about-section .isian-kanan .kotaks .kotak-kiri {
+  margin: 2px auto 0px 29px;
+  width: 334px;
+}
+
+.about-section .isian-kanan .kotaks .kotak-kiri p {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: Poppins, sans-serif;
+}
+
+.about-section .isian-kanan .kotaks .kotak-kanan {
+  margin: 30px 40px 30px auto;
+}
+/* Project */
+
+.project {
+  background: var(--purple-color);
+  height: 870px;
+  width: 100%;
+}
+
+.grup-project {
+  display: flex;
+  height: auto;
+  width: 1317px;
+  padding-top: 108px;
+}
+
+.grup-project .kiri h1 {
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--white-color);
+  margin-bottom: 0;
+  margin-left: 180px;
+}
+
+.grup-project .kiri img {
+  margin-top: -60px;
+}
+
+.grup-project .kanan {
+  margin-top: 30px;
+}
+
+.grup-project .kanan .cerita {
+  height: 187px;
+  width: 488px;
+}
+
+.grup-project .kanan .Cerita h1 {
+  font-size: 38px;
+  font-weight: bold;
+  font-family: Poppins, sans-serif;
+  color: white;
+  margin-top: 40px;
+  text-align: center;
+  margin: 1% auto 0% auto;
+}
+
+.grup-project .kanan p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Piazzolla", serif;
+  text-align: center;
+  color: var(--white-color);
+  padding-bottom: 16px;
+}
+
+.grup-project .kanan a {
+  margin-left: 200px;
+}
+
+.property {
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 70px;
+  width: 632px;
+  height: 346px;
+  margin-top: 28px;
+}
+
+.property h1 {
+  text-align: center;
+  padding-top: 11px;
+  padding-bottom: 15px;
+  font-size: 40px;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  color: var(--white-color);
+}
+
+.property .grup-property {
+  display: flex;
+  height: 56px;
+}
+
+.property .grup-property .property-html {
+  width: auto;
+  height: 53px;
+}
+
+.property .grup-property .property-css {
+  width: auto;
+  height: 53px;
+}
+
+.property .grup-property .property-js {
+  width: auto;
+  height: 53px;
+}
